@@ -18,24 +18,26 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU Lesser General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
-API:
-
+### API:
+``` csharp
 public static Vector2 USCToGPS(Vector3 position)
+```
 -------------------------------------------------------
 To find the GPS equivalent to your (x,y,z) position in the scene
 simply pass that position into this function.
 
-
+``` csharp
 public static Vector3 GPSToUCS(Vector2 gps)
+```
+``` csharp
 public static Vector3 GPSToUCS(float latitude, float longitude)
+```
 -------------------------------------------------------
 To find the (X,Y,Z) equivalent of a set of GPS coordinates.
 Pass the latitude and longitude into one of these functions.
-
-
-
-
+``` csharp
 public static void SetLocalOrigin(Vector2 localOrigin)
+```
 -------------------------------------------------------
 By Default All of your conversions will assume that your using a 
 latitude/longitude origin of (0,0). This places you at the real life origin
